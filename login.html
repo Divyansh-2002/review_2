@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+<section>
+    <h1><span class="dropdown"><label for="About Us">Purpose of Raising Funds: </label>
+        <select name="About Us" id="About Us">
+          <option value="1">Medical Treatment</option>
+          <option value="2">NGO/Charity</option>
+          <option value="3">Other Causes</option>
+        </select></span></h1>
+
+    <form action="/submit_form" method="post">
+        <label for="name">Name on which you Need Funds:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br><br>
+
+        <label for="picture">Upload files for validation:</label>
+        <input type="file" id="picture" name="picture" accept="image/*"><br><br>
+
+        <input type="submit" value="Upload">
+    </form>
+</section>
+</body>
+</html>
